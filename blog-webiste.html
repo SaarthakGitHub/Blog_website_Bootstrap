@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coder's Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar bg-primary navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Coder's</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="mx-2">
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-success ms-1" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to your account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlTextarea1"></input>
+                <input type="checkbox" class="my-1" required>
+                <label for="Terms" class="form-label">I Agree</label>
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Signup modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signModalLabel">Sign up</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Create password</label>
+                <input type="password" class="form-control" id="exampleFormControlTextarea1" placeholder="Password"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Re-enter password</label>
+                <input type="password" class="form-control" id="exampleFormControlTextarea1" placeholder="Password"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer row me-1">
+          <button type="button" class="btn btn-secondary col-2" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary col-4">Create Account</button>
+        <div class="row">
+            <a class="form-link justify-content-center d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#loginModal">Have an existing account??</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active" data-interval="10">
+          <img
+            src="data:image/jpeg;base64,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"
+            width="1000"
+            height="500"
+            class="d-block w-100"
+            alt="Image supposed to be here"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Coder's Blog</h5>
+            <p>Award winning blog</p>
+            <button class="btn btn-primary">Development</button>
+            <button class="btn btn-danger">News</button>
+            <button class="btn btn-success">Podcast</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="10">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxvgK8u2iumpI6mgjMKIFEbx9q__8Dv5fWw&usqp=CAU"
+            width="1400"
+            height="500"
+            class="d-block w-100"
+            alt="Image supposed to be here"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Coder's Blog</h5>
+            <p>Award winning blog</p>
+            <button class="btn btn-primary">Development</button>
+            <button class="btn btn-danger">News</button>
+            <button class="btn btn-success">Podcast</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="10">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaecpiYQIjuMTmJRgusnSzeEDIU4HW4I7PuQ&usqp=CAU"
+            width="1400"
+            height="500"
+            class="d-block w-100"
+            alt="Image supposed to be here"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Coder's Blog</h5>
+            <p>Award winning blog</p>
+            <button class="btn btn-primary">Development</button>
+            <button class="btn btn-danger">News</button>
+            <button class="btn btn-success">Podcast</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- card -->
+    <div class="container my-4">
+        <div class="row mb-2">
+            <!-- <div class="col-md-3"></div> -->
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis"><div class="text-danger">World</div></strong>
+                  <h3 class="mb-0">Coding conferences around the globe</h3>
+                  <div class="mb-1 text-body-secondary">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCBPtWUR4Qt8AGEJch9lGQuy8TorVhajEng&usqp=CAU" width="300" height="250">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success-emphasis"><div class="text-success">Design</div></strong>
+                  <h3 class="mb-0">Learn designing</h3>
+                  <div class="mb-1 text-body-secondary">Nov 11</div>
+                  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5-E5bA-HmZrh8E1kk6SMnGWBkaskd2wjt2w&usqp=CAU" width="300" height="250">
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-3"></div> -->
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-5 text-center text-light bg-dark">
+        <p>Coder's Blog built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://www.linkedin.com/in/saarthakgupta27/">Saarthak</a>.</p>
+        <p class="mb-0">
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
